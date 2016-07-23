@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius"
+    android:layout_margin="@dimen/p10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/imgFotoCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blackbird"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnLike"
+                    android:layout_width="@dimen/btn_like"
+                    android:layout_height="@dimen/btn_like"
+                    android:background="@drawable/whitebone"/>
+
+                <TextView
+                    android:id="@+id/tvNombreCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cv_nombre"
+                    android:paddingLeft="@dimen/p10"
+                    android:textSize="@dimen/texto"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tvLikesCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cv_likes"
+                    android:paddingRight="@dimen/p10"
+                    android:textSize="@dimen/texto"/>
+
+                <ImageView
+                    android:layout_width="@dimen/btn_like"
+                    android:layout_height="@dimen/btn_like"
+                    android:src="@drawable/yellowbone"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
